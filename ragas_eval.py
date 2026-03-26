@@ -5,7 +5,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 # Import your actual LangGraph app and retriever from your main code
-from main import app, retriever
+from main import app, retriever, embeddings  # Ensure embeddings are imported
 from langchain_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 
@@ -52,7 +52,6 @@ def run_ragas_evaluation():
         answer = response_state["messages"][-1].content
 
         # Retrieve the raw context chunks used for this specific answer
-        # This is critical for measuring 'Faithfulness' (Grounding)
         context_docs = retriever.invoke(question)
         contexts = [doc.page_content for doc in context_docs]
 
@@ -67,6 +66,7 @@ def run_ragas_evaluation():
     dataset = Dataset.from_list(eval_samples)
 
     # 4. Perform Mathematical Evaluation
+    # Note: We explicitly pass 'embeddings' to avoid the default OpenAI dependency
     print("⚖️ Scoring metrics (LLM-as-a-Judge)...")
     results = evaluate(
         dataset,
@@ -76,7 +76,8 @@ def run_ragas_evaluation():
             context_recall,
             context_precision
         ],
-        llm=evaluator_llm
+        llm=evaluator_llm,
+        embeddings=embeddings
     )
 
     # 5. Output Results

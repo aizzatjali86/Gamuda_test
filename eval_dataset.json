@@ -1,0 +1,72 @@
+[
+  {
+    "id": "TC-001",
+    "category": "Direct Retrieval",
+    "difficulty": "Easy",
+    "question": "What is the specific soil risk ID identified at the Gombak site and its pH level?",
+    "ground_truth": "The soil risk ID is SR-992, and the identified pH level is 3.2 (extreme acidity)."
+  },
+  {
+    "id": "TC-002",
+    "category": "Direct Retrieval",
+    "difficulty": "Easy",
+    "question": "Which subcontractor reported a 20% turnover in their masonry team?",
+    "ground_truth": "The subcontractor is Build-Right Ltd."
+  },
+  {
+    "id": "TC-003",
+    "category": "Tabular Analysis",
+    "difficulty": "Medium",
+    "question": "Which project has a budget of 1.2M RM but is currently overspent, and by how much?",
+    "ground_truth": "Project Gamma (P003) has a budget of 1,200,000 RM and has spent 1,350,200 RM, resulting in an overspend of 150,200 RM."
+  },
+  {
+    "id": "TC-004",
+    "category": "Reasoning & Logic",
+    "difficulty": "Medium",
+    "question": "How much did Project Beta save on earthworks and what was the requested use for those funds?",
+    "ground_truth": "Project Beta saved approximately RM 52,450. Mike Wong requested these savings be reallocated to the 'Safety-First' bonus pool for the ground crew."
+  },
+  {
+    "id": "TC-005",
+    "category": "Multi-hop Inference",
+    "difficulty": "Hard",
+    "question": "Connect the safety incident on 05-Mar-2024 to the Risk Register. Who is the owner and what is the status?",
+    "ground_truth": "The incident involved Crane #4 near power lines (Incident LOG-A12). This corresponds to Risk ID R-102 in the Risk Register, which is owned by M. Wong and is currently marked as 'Resolved'."
+  },
+  {
+    "id": "TC-006",
+    "category": "Financial Reconciliation",
+    "difficulty": "Hard",
+    "question": "Explain the Q1 budget variance for Project Alpha. Does the Financial Summary CSV reflect the cause mentioned in the status report?",
+    "ground_truth": "Project Alpha has a $120k variance caused by procurement of specialized liners (15.4% over baseline). The Financial Summary CSV (P001) reflects this by noting 'Requires re-forecast due to soil' in the Notes column."
+  },
+  {
+    "id": "TC-007",
+    "category": "Technical Extraction",
+    "difficulty": "Medium",
+    "question": "What material was used for drainage in Project Beta and what clearance was granted?",
+    "ground_truth": "High-density polyethylene (HDPE) pipes were used. The local council granted a 'Stage 2' clearance certificate."
+  },
+  {
+    "id": "TC-008",
+    "category": "Synthesized Risk Audit",
+    "difficulty": "Hard",
+    "question": "List all active risks owned by Sarah Jenkins and their total mitigation costs.",
+    "ground_truth": "Sarah Jenkins owns R-101 (Soil Acidity, $45,000) and R-103 (Steel Shortage, $120,000). The total mitigation cost is $165,000."
+  },
+  {
+    "id": "TC-009",
+    "category": "Negative Constraint",
+    "difficulty": "Easy",
+    "question": "What is the completion date for the tunneling works in Project Zeta?",
+    "ground_truth": "The provided documents do not state a completion date for Project Zeta; they only note that major works were ongoing as of 14-Feb-2024."
+  },
+  {
+    "id": "TC-010",
+    "category": "Temporal Reasoning",
+    "difficulty": "Medium",
+    "question": "Compare the original handover date of Project Alpha with the current estimate. What is the delay in months?",
+    "ground_truth": "The original handover was 20-Dec-2024, now estimated for 15-Feb-2025. This represents a delay of approximately 2 months."
+  }
+]

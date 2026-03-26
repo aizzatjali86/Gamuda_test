@@ -1,0 +1,7 @@
+Risk_ID,Category,Description,Impact_Score,Probability,Status,Owner,Mitigation_Cost
+R-101,Environment,Soil Acidity (pH 3.2),9,0.9,Active,S. Jenkins,45000
+R-102,Safety,Crane Ops Near Lines,4,0.2,Resolved,M. Wong,0
+R-103,Supply,Steel Shortage (Grade A),7,0.6,Pending,S. Jenkins,120000
+R-104,Weather,Monsoon Flooding,,0.8,Ongoing,Tech Team,15000
+R-105,Regulatory,Permit Delay Sector 9,6,0.4,New,L. K. Chin,5000
+R-106,Utility,Unmapped Fiber Optic,5,0.1,Active,M. Wong,2500

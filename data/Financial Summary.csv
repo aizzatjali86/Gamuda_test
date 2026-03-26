@@ -1,0 +1,7 @@
+Project_ID,Project_Name,Budget_Allocated,Actual_Spend,Currency,Last_Updated,Department,Notes
+P001,Alpha,5000000,4200000,USD,2024-03-01,Foundations,Requires re-forecast due to soil
+P002,Beta,2500000,,RM,03/15/24,Drainage,Spend pending final contractor invoice
+P003,Gamma,1200000,1350200,RM,2024-02-28,Landscaping,Overspent due to plant pricing
+P004,Delta,3000000,150000,$,2024-01-10,Planning,Early stage
+P005,Epsilon,850000,900000,MYR,2023/12/12,Renovation,Completed project
+P006,Zeta,15000000,12000000,USD,14-Feb-2024,Tunnels,Major works

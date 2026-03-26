@@ -1,0 +1,26 @@
+# Web & Server
+fastapi
+uvicorn
+gunicorn
+python-multipart
+python-dotenv
+
+# Core AI & Logic
+langchain
+langchain-core
+langchain-community
+langchain-google-genai
+langgraph
+google-generativeai
+
+# CRITICAL: Missing Splitter Fix
+langchain-text-splitters
+
+# Data & Documents
+pandas
+pypdf
+rank_bm25
+
+# Vector Database & Processing
+chromadb
+tiktoken

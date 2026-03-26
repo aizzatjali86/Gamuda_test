@@ -19,17 +19,17 @@ except ImportError:
 from langchain_core.messages import BaseMessage, HumanMessage, AIMessage
 from langgraph.graph import StateGraph, END
 
-# Standardized Imports for Cloud Build Compatibility
+# MOST STABLE IMPORT PATH FOR ENSEMBLE RETRIEVER
 try:
-    from langchain_community.retrievers import EnsembleRetriever, BM25Retriever
-except ImportError:
     from langchain.retrievers import EnsembleRetriever
-    from langchain_community.retrievers import BM25Retriever
-
-try:
-    from langchain_community.retrievers import BM25Retriever
 except ImportError:
-    from langchain.retrievers import BM25Retriever
+    try:
+        from langchain_community.retrievers import EnsembleRetriever
+    except ImportError:
+        # Fallback for very specific modular versions
+        from langchain_community.retrievers.ensemble import EnsembleRetriever
+
+from langchain_community.retrievers import BM25Retriever
 
 # Load environment
 load_dotenv()

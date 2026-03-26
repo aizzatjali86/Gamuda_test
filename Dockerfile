@@ -30,5 +30,5 @@ COPY --from=build /app/dist ./static
 ENV PORT=8080
 EXPOSE 8080
 
-# The CMD must run the Python server, which serves both API and static UI
+# The CMD must run the Python server, not Nginx
 CMD ["python", "server.py"]

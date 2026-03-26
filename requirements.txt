@@ -1,26 +1,22 @@
-# Web & Server
-fastapi
-uvicorn
-gunicorn
-python-multipart
-python-dotenv
+#LangChain & Logic
 
-# Core AI & Logic
-langchain
-langchain-core
-langchain-community
-langchain-google-genai
-langgraph
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.0.38
+langgraph>=0.0.39
+langchain-google-genai>=1.0.3
 google-generativeai
 
-# CRITICAL: Missing Splitter Fix
-langchain-text-splitters
+#Data
 
-# Data & Documents
-pandas
-pypdf
-rank_bm25
+pandas>=2.0.0
+chromadb>=0.4.24
+pypdf>=4.2.0
+rank_bm25>=0.2.2
+python-dotenv>=1.0.0
+pydantic>=2.0.0
 
-# Vector Database & Processing
-chromadb
-tiktoken
+#Server
+
+fastapi
+uvicorn
